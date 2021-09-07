@@ -12,7 +12,7 @@
 <body>
     <div id="content">
 
-        <main>
+        <header>
 
             <h1 id="title">Fill me up!</h1>
             <p id="description">This survey is made to 
@@ -20,6 +20,10 @@
                 and send me away!
             </p>
 
+        </header>
+
+        <main>
+        
             <form action="#" method="POST" id="survey-form">
 
                 <label for="name" id="name-label">Name</label>
@@ -28,8 +32,9 @@
                 <label for="email" id="email-label">Email</label>
                 <input type="text" name="email" id="email" placeholder="Enter your email...">
 
-                <label for="Age" id="number-label">Age</label>
-                <input type="number" name="age" id="age" min="18" max="35" placeholder="age">
+                <label for="number" id="number-label">Age</label>
+                <input type="number" name="age" id="number" min="18" max="35" placeholder="Age">
+
 
                 <p>Would you recommend Crossfit to a friend?</p>
                 
@@ -44,7 +49,7 @@
 
                 <p>How much experience do you have of Crossfit?</p>
                 <select name="main-entertainment" id="dropdown">
-                    <option disabled selected value>Select main entertainment</option>
+                    <option disabled selected value>Select level of experience</option>
                     <option value="none">None</option>
                     <option value="less-than-year">Less than 1 year</option>
                     <option value="1-2years">1-2 years</option>
@@ -63,10 +68,11 @@
                 <label for="weightlifting">Weightlifting</label>
 
                 <input type="checkbox" id="powerlifting" name="powerlifting" value="powerlifting">
-                <label for="powerlifting">Powerlifting</label>  
+                <label for="powerlifting">Powerlifting</label><br>
 
-                <label for="comment">Additional comments:</label>
+                <label for="comment">Additional comments:</label><br>
                 <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+                <br>
 
                 <input type="submit">
 
